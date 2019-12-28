@@ -1,0 +1,36 @@
+﻿  CoreUtils.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(40): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(51): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(93): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(152): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(142): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(144): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(155): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(172): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(187): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(208): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(211): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(220): warning C4244: “初始化”: 从“int64_t”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(362): warning C4307: “+”: 整型常量溢出
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(363): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
+  StringUtils.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(77): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(80): warning C4267: “+=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(112): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  NetworkClient.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(98): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(104): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(113): warning C4244: “=”: 从“int64_t”转换到“double”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(271): warning C4244: “初始化”: 从“int64_t”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(387): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(528): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(591): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(622): warning C4244: “参数”: 从“int64_t”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(703): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(708): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  正在生成代码
+  All 1063 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  MFCApplication1.vcxproj -> D:\cpp_program\Application\NetClientService\x64\Release\MFCApplication1.exe

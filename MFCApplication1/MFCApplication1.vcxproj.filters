@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MFCApplication1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCApplication1Dlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSafeBuffer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tinyjson.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypeStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inifile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDatas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="httpClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\3rdpart\utf8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\CoreTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\CoreUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\StringUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\utils_unix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\utils_win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\3rdpart\utf8\checked.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\3rdpart\utf8\core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\3rdpart\utf8\unchecked.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DBOperation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AIOperationDatas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptureLaser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataExport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCApplication1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCApplication1Dlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptureLaser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadSafeBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataExport.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DBOperation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTypeStruct.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inifile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDatas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="httpClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utils\CoreUtils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utils\StringUtils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AIOperationDatas.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCApplication1.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCApplication1.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCApplication1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

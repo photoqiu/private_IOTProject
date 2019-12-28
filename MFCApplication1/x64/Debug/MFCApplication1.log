@@ -1,0 +1,522 @@
+﻿  stdafx.cpp
+  AIOperationDatas.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“HGInputAB”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(36): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputSingle”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(42): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputAB”的左侧
+d:\cpp_program\application\netclientservice\mfcapplication1\aioperationdatas.cpp(10): warning C4305: “初始化”: 从“double”到“float”截断
+  base64.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\base64.cpp(88): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\base64.cpp(99): warning C4267: “=”: 从“size_t”转换到“unsigned char”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\base64.cpp(113): warning C4267: “=”: 从“size_t”转换到“unsigned char”，可能丢失数据
+  BufferManager.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\buffermanager.cpp(35): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\buffermanager.cpp(48): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+  CaptureLaser.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“HGInputAB”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(36): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputSingle”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(42): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputAB”的左侧
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(21): warning C4189: “nProfDataCnt”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(48): warning C4244: “=”: 从“int”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(68): warning C4189: “nVersion”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(67): warning C4189: “nRc”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(91): warning C4244: “=”: 从“UINT”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(92): warning C4244: “=”: 从“UINT”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(93): warning C4244: “=”: 从“UINT”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(94): warning C4244: “=”: 从“UINT”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(95): warning C4244: “=”: 从“UINT”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(96): warning C4244: “=”: 从“UINT”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(103): warning C4189: “nRc”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(116): warning C4100: “dwSize”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(116): warning C4100: “pBuffer”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(137): warning C4189: “nProfDataCnt”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(212): warning C4244: “=”: 从“int”转换到“BYTE”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(249): warning C4189: “nRc”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(331): warning C4189: “pszEnd”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(373): warning C4189: “nRc”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(378): warning C4189: “nRc”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(549): warning C4189: “nRc”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(645): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(650): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(655): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(660): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(684): warning C4305: “=”: 从“int”到“BYTE”截断
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(684): warning C4309: “=”: 截断常量值
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(727): warning C4100: “arg”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\capturelaser.cpp(818): warning C4189: “flag”: 局部变量已初始化但不引用
+  ClientDatas.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(42): warning C4244: “参数”: 从“int”转换到“u_short”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(43): warning C4189: “status”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(88): warning C4477: “printf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“intptr_t”
+  d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(88): note: 请考虑在格式字符串中使用“%Iu”
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(82): warning C4100: “arg”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(91): warning C4100: “arg”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(91): warning C4100: “bev”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(97): warning C4100: “arg”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(158): warning C4100: “p”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(174): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(184): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(194): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(209): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(229): warning C4244: “=”: 从“std::streamoff”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(248): warning C4100: “event”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\clientdatas.cpp(248): warning C4100: “fd”: 未引用的形参
+  DataExport.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(48): warning C4100: “datas”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(79): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(84): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(89): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(94): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(120): warning C4101: “hFile”: 未引用的局部变量
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(130): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(135): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(140): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(145): warning C4189: “flag”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(191): warning C4100: “nProfileCnt”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\dataexport.cpp(214): warning C4100: “nProfileCnt”: 未引用的形参
+  DataTypeStruct.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\datatypestruct.cpp(16): warning C4100: “ctype”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\datatypestruct.cpp(21): warning C4100: “files”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\datatypestruct.cpp(21): warning C4100: “ctype”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\datatypestruct.cpp(27): warning C4100: “files”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\datatypestruct.cpp(33): warning C4100: “files”: 未引用的形参
+  DBOperation.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\dboperation.cpp(51): warning C4566: 由通用字符名称“\u00BB”表示的字符不能在当前代码页(936)中表示出来
+d:\cpp_program\application\netclientservice\mfcapplication1\dboperation.cpp(88): warning C4566: 由通用字符名称“\u00BB”表示的字符不能在当前代码页(936)中表示出来
+d:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(1443): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+  d:\cpp_program\application\netclientservice\include\jdbc\cppconn\sqlstring.h(124): note: 参见对正在编译的函数 模板 实例化“_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)”的引用
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Ty=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=int (__cdecl *)(int)
+          ]
+  DeviceData.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+  httpClient.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+  inifile.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(56): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(60): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(83): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(136): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(507): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(524): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(540): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.cpp(553): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  MFCApplication1.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“HGInputAB”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(36): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputSingle”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(42): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputAB”的左侧
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(1443): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+  d:\cpp_program\application\netclientservice\include\jdbc\cppconn\sqlstring.h(124): note: 参见对正在编译的函数 模板 实例化“_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)”的引用
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Ty=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=int (__cdecl *)(int)
+          ]
+  MFCApplication1Dlg.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(29): warning C4091: “typedef ”: 没有声明变量时忽略“HGInputAB”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(36): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputSingle”的左侧
+d:\cpp_program\application\netclientservice\lib\alg\dllhgbjalg.h(42): warning C4091: “typedef ”: 没有声明变量时忽略“HGOutputAB”的左侧
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(1443): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+  d:\cpp_program\application\netclientservice\include\jdbc\cppconn\sqlstring.h(124): note: 参见对正在编译的函数 模板 实例化“_OutIt std::transform<std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,int(__cdecl *)(int)>(const _InIt,const _InIt,_OutIt,_Fn)”的引用
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Ty=char,
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Fn=int (__cdecl *)(int)
+          ]
+  SocketClient.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\mfcapplication1\inifile.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  SocketServer.cpp
+  ThreadSafeBuffer.cpp
+d:\cpp_program\application\netclientservice\include\stdint.h(132): warning C4005: “INT8_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(158): note: 参见“INT8_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(133): warning C4005: “INT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(181): note: 参见“INT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(134): warning C4005: “INT16_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(160): note: 参见“INT16_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(135): warning C4005: “INT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(185): note: 参见“INT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(136): warning C4005: “INT32_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(162): note: 参见“INT32_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(137): warning C4005: “INT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(190): note: 参见“INT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(138): warning C4005: “INT64_MIN”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(166): note: 参见“INT64_MIN”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(139): warning C4005: “INT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(198): note: 参见“INT64_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(140): warning C4005: “UINT8_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(182): note: 参见“UINT8_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(141): warning C4005: “UINT16_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(187): note: 参见“UINT16_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(142): warning C4005: “UINT32_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(192): note: 参见“UINT32_MAX”的前一个定义
+d:\cpp_program\application\netclientservice\include\stdint.h(143): warning C4005: “UINT64_MAX”: 宏重定义
+  d:\windows kits\10\include\10.0.17763.0\shared\intsafe.h(203): note: 参见“UINT64_MAX”的前一个定义
+  正在生成代码...
+d:\cpp_program\application\netclientservice\mfcapplication1\threadsafebuffer.cpp(109): warning C4702: 无法访问的代码
+  CoreUtils.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(35): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(40): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(51): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(93): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(152): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\utils_win.h(134): warning C4100: “mode”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(135): warning C4189: “r”: 局部变量已初始化但不引用
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(142): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(144): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(155): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(172): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(187): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(208): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(211): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(220): warning C4244: “初始化”: 从“int64_t”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(285): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(287): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(296): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(362): warning C4307: “+”: 整型常量溢出
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(363): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
+  StringUtils.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(77): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(80): warning C4267: “+=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(101): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\stringutils.cpp(112): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  NetworkClient.cpp
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(41): warning C4100: “purpose”: 未引用的形参
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(98): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(104): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(113): warning C4244: “=”: 从“int64_t”转换到“double”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(271): warning C4244: “初始化”: 从“int64_t”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(387): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(528): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(591): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(622): warning C4244: “参数”: 从“int64_t”转换到“long”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(703): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(708): warning C4244: “=”: 从“double”转换到“int64_t”，可能丢失数据
+  正在生成代码...
+d:\cpp_program\application\netclientservice\mfcapplication1\networkclient.cpp(92): warning C4706: 条件表达式内的赋值
+d:\cpp_program\application\netclientservice\mfcapplication1\core\utils\coreutils.cpp(423): warning C4715: “IuCoreUtils::getFileSize”: 不是所有的控件路径都返回值
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+msvcrtd.lib(initializers.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  MFCApplication1.vcxproj -> D:\cpp_program\Application\NetClientService\x64\Debug\MFCApplication1.exe
