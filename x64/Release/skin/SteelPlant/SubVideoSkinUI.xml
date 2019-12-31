@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window caption="0,0,0,97" size="600,384" mininfo="600,384" sizebox="6,6,6,6" layered="true" textrenderinghint="0" showshadow="true" shadowimage="main/shadow.png" shadowsize="6" shadowcorner="8,8,8,8"> 
+    <Font name="微软雅黑" size="13" bold="true" italic="false" />
+    <Font name="微软雅黑" size="12" bold="true" italic="false" />
+    <Font name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="true" italic="false" />
+    <Font name="微软雅黑" size="22" bold="true" italic="true" />
+    <VerticalLayout bordersize="1" bkcolor="#FFD1E8F5" bkcolor2="#FFC6E0F1" bordercolor="#FF768D9B" inset="1,0,1,0">
+        <HorizontalLayout height="24">
+            <HorizontalLayout>
+                <Container width="32" height="32" bkimage="file='home.png' source='0,0,16,16' dest='5,4,31,30' " />
+                <Text text="衡钢视觉识别项目" float="true" pos="32,5,0,0" width="168" height="29" textpadding="2,0,2,0" textcolor="#FF447AA1" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+            </HorizontalLayout>
+            <HorizontalLayout width="98" inset="0,1,0,0">
+                <Button name="minbtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
+                <Button name="maxbtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,18'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
+                <Button name="restorebtn" visible="false" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_restore.png' source='52,0,78,17'" hotimage="file='sys_dlg_restore.png' source='26,0,52,17'" pushedimage="file='sys_dlg_restore.png' source='0,0,26,17'" />
+                <Button name="closebtn" maxwidth="45" maxheight="17" normalimage="file='sys_dlg_close.png' source='90,0,135,17'" hotimage="file='sys_dlg_close.png' source='45,0,90,17'" pushedimage="file='sys_dlg_close.png' source='0,0,45,17'"/>
+            </HorizontalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout width="800" height="30" padding="2,2,2,2">
+            <Option name="captureVideo" text="视频摄像头" width="120" height="30" bordercolor="#FF000000" textcolor="#FF1C1C1C" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='active_hover.png'" selected="true" group="switch" selectedimage="file='none_stop.png'" />
+            <Option name="laserCamera" text="激光摄像头" width="120" height="30" bordercolor="#FF000000" textcolor="#FF1C1C1C" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='active_hover.png'" group="switch" selectedimage="file='none_stop.png'" />
+            <Option name="dataViewer" text="缺陷数据表" width="120" height="30" bordercolor="#FF000000" textcolor="#FF1C1C1C" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='active_hover.png'" group="switch" selectedimage="file='none_stop.png'" />
+        </HorizontalLayout>
+        <TabLayout name="TabLayoutMain" padding="2,2,2,2" bordercolor="#FF000000">
+            <HorizontalLayout>
+                <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                    <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                        <Text text="摄像头01" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG01.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                    <HorizontalLayout bordersize="1" bkcolor="#000000F5" bordercolor="#0000009B">
+                        <Text text="摄像头02" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG02.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Text text="摄像头03" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG03.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                    <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                        <Text text="摄像头04" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG04.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Text text="摄像头03" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG05.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                    <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                        <Text text="摄像头04" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG06.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Text text="摄像头03" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG07.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                    <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                        <Text text="摄像头04" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                        <Container width="197" height="294" bkimage="file='JG08.png' source='0,0,261,296'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout>
+                <List name="list_data" bordersize="1" bkcolor="#FFFFFFFF" bordercolor="#FFD7D7D7" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemlinecolor="#FFD7D7D7" itemshowhtml="true" itemvalign="vcenter" scrollstepsize="100" vscrollbar="true" hscrollbar="true">
+                    <ListHeader bordersize="1" height="40" bkcolor="#FFE6ECF7" bordercolor="#FFD7D7D7">
+                        <ListHeaderItem name="es_header_index_dbclick" text="序号" width="89" minwidth="16" textcolor="#FF000000" sepwidth="4" />
+                        <ListHeaderItem name="es_header_info_dbclick" text="信号来源" width="189" minwidth="16" textcolor="#FF000000" sepwidth="4" />
+                        <ListHeaderItem name="es_header_timer_dbclick" text="时间" width="159" minwidth="16" textcolor="#FF000000" sepwidth="4" />
+                        <ListHeaderItem name="es_header_xyinfo_dbclick" text="检测信息" width="199" minwidth="16" textcolor="#FF000000" sepwidth="4" />
+                        <ListHeaderItem name="es_header_info_dbclick" text="钢管信息" width="259" minwidth="16" textcolor="#FF000000" sepwidth="4" />
+                    </ListHeader>
+                    <ListContainerElement height="30" bordercolor="#FFCCCCCC">
+                        <Label name="orderIndex" text="01" align="center" width="89" minwidth="16" />
+                        <Label text="激光摄像头01" align="center" width="189" minwidth="16" />
+                        <Label text="2019-04-10 02:03:16" align="center" width="159" minwidth="16" />
+                        <Label text="有刮伤" align="center" width="199" minwidth="16" />
+                        <Label text="990102批次" align="center" width="259" minwidth="16" />
+                    </ListContainerElement>
+                </List>
+            </HorizontalLayout>
+            <HorizontalLayout>
+                <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Container width="397" height="295" bkimage="file='image01.png' source='0,0,640,480'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Container width="397" height="295" bkimage="file='image02.png' source='0,0,640,480'corner='261,296,0,0'" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Container width="397" height="295" bkimage="file='image03.png' source='0,0,640,480'corner='640,480,0,0'" />
+                    </HorizontalLayout>
+                    <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                        <Container width="397" height="295" bkimage="file='image04.png' source='0,0,640,480'corner='640,480,0,0'" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </HorizontalLayout>
+            
+            <HorizontalLayout>
+                <Container name="wappers">
+                    <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                        <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                            <Text text="摄像头01" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG01.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                        <HorizontalLayout bordersize="1" bkcolor="#000000F5" bordercolor="#0000009B">
+                            <Text text="摄像头02" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG02.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                        <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                            <Text text="摄像头03" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG03.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                        <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                            <Text text="摄像头04" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG04.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                        <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                            <Text text="摄像头03" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG05.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                        <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                            <Text text="摄像头04" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG06.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <VerticalLayout bordersize="1" bkcolor="#D5D5D5F5" bkcolor2="#FFC6E0F1" bordercolor="#0000009B" inset="1,0,1,0">
+                        <HorizontalLayout bordersize="1" bkcolor="#CCCCCCF5" bordercolor="#0000009B">
+                            <Text text="摄像头03" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG07.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                        <HorizontalLayout bordersize="1" bkcolor="#FFFFFFF5" bordercolor="#0000009B">
+                            <Text text="摄像头04" float="true" pos="15,10,0,0" width="185" height="40" textpadding="2,0,2,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" align="wrap" />
+                            <Container width="197" height="294" bkimage="file='JG08.png' source='0,0,261,296'corner='261,296,0,0'" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                </Container>
+            </HorizontalLayout>
+            
+        </TabLayout>
+        <HorizontalLayout height="24">
+            <Text text="{c #386382}主程序版本：1.0.0.2019{/c}" float="true" pos="0,5,0,0" width="200" height="19" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="wrap" />
+            <Text text="{c #386382}最后更新日期：2019-04-02{/c}" float="true" pos="155,5,0,0" width="245" height="19" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="wrap" />
+            <Control float="true" pos="550,4,0,0" width="16" height="16" bkimage="cloud.png" />
+            <Text text="{c #386382}成功连接LeapIOT内网云{/c}" float="true" pos="570,5,0,0" width="230" height="19" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="wrap" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

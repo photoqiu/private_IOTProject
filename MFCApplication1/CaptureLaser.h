@@ -33,15 +33,13 @@
 #include "Define.h"
 #pragma once
 #define _CRT_SECURE_NO_DEPRECATE
-using namespace std;
-
-
-
 #define NUM_THREADS 56 //线程数
-
 #define m_xvCallbackFrequency 500
+using namespace std;
 static const int m_xvMainDataCnt = 500;
-
+const static int ROWNUMS = 500;
+const static int COLUMNS = 1200;
+const static int TotalSize = (500 * (1200 * sizeof(int))) + 500;
 
 class CaptureLaser
 {
@@ -110,6 +108,7 @@ private:
 	// 收到内容Profile.
 	static void CountProfileReceive(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser);
 	static void ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser);
+	static char* my_strncpy(char *dest, char *source);
 	void Settime();
 	int initCommonSystems();
 	LJV7IF_PROFILE_INFO getProFileInfoConfig();

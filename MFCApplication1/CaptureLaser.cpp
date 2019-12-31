@@ -1,11 +1,10 @@
 #include "stdafx.h"
 #include "CaptureLaser.h"
 
-using namespace std;
-pthread_mutex_t mutex;
 LJV7IF_PROFILE_INFO CaptureLaser::m_profileInfo;
 LJV7IF_PROFILE_INFO CaptureLaser::m_aProfileInfo[LJV7IF_DEVICE_COUNT];
 vector<PROFILE_DATA> g_vecProfileData;
+
 
 CaptureLaser::CaptureLaser()
 {
@@ -132,59 +131,94 @@ void OutputDebugStringEx(const char *strOutputString, ...)
 	delete[] strBuffer;
 }
 
+char* CaptureLaser::my_strncpy(char *dest, char *source)
+{
+	if (dest != 0 && source != 0)
+	{
+		int dlen = strlen(dest);
+		int slen = strlen(source);
+		if (dlen <= slen)
+		{
+			/* 如果目标字符串长度小于源字符串长度 */
+			/* 就把源字符串按从前往后的顺序，完全覆盖在目标字符串上 */
+			return strncpy(dest, source, dlen);
+		}
+		else
+		{
+			/* 如果目标字符串长度大于源字符串长度 */
+			/* 就把源字符串按从前往后的顺序，覆盖在目标字符串上 */
+			/* 保留目标字符串后面几位字符 */
+			return strncpy(dest, source, slen);
+		}
+	}
+	return 0;
+}
+
 void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
 {
 	vector<PROFILE_DATA> vecProfileData;
-	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD);
-	/*
-	CString m_fSaveFilePath = CDataExport::MakeProfileName(0);
-	pthread_t producter_t;
-	if (pthread_mutex_init(&mutex, NULL) != 0)
-	{
-		cout << "Init metux error." << endl;
-		exit(1);
-	}
-	pthread_create(&producter_t, NULL, GettingDataThread, NULL);
-	if (pthread_create(&producter_t, NULL, &fun_thread1, NULL) != 0)
-	{
-		cout << "Init thread1 error." << endl;
-		exit(1);
-	}
-	pthread_join(producter_t, NULL);
-	pthread_mutex_destroy(&mutex);
-	if (pthread_create(&thread1, NULL, &fun_thread1, NULL) != 0)
-	{
-		cout << "Init thread1 error." << endl;
-		exit(1);
-	}
-	*/
+	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD) + 1;
+	int nReceiveDataOnceSize = (sizeof(int) * nProfDataCnt);
+	char *dataBuffers = new char[TotalSize];
+	int *BufferInt = new int[TotalSize];
 	for (DWORD i = 0; i < dwCount; i++)
 	{
+		char *TempBuffers = new char[nProfDataCnt];
+		nReceiveDataOnceSize = nReceiveDataOnceSize * (i + 1);
 		BYTE *pbyBlock = pBuffer + dwSize * i;
 		LJV7IF_PROFILE_HEADER* pHeader = (LJV7IF_PROFILE_HEADER*)pbyBlock;
 		int* pnProfileData = (int*)(pbyBlock + sizeof(LJV7IF_PROFILE_HEADER));
 		LJV7IF_PROFILE_FOOTER* pFooter = (LJV7IF_PROFILE_FOOTER*)(pbyBlock + dwSize - sizeof(LJV7IF_PROFILE_FOOTER));
 		vecProfileData.push_back(PROFILE_DATA(m_aProfileInfo[dwUser], pHeader, pnProfileData, pFooter));
-		AIOperationDatas::DataProcessing(pnProfileData);
-		/*
-		for (int k = 0; k < nProfDataCnt; k++)
+		memcpy_s(TempBuffers, nProfDataCnt, pnProfileData, nProfDataCnt);
+		snprintf(dataBuffers, nReceiveDataOnceSize, "%s%s", dataBuffers, TempBuffers);
+		if (TempBuffers != NULL)
 		{
-			fprintf(fp, "%ld\t", pnProfileData[k]);
+			delete[] TempBuffers;
+			TempBuffers = NULL;
 		}
-		fwrite("\n", 1, 1, fp);
-		int nReceiveDataOnceSize = (sizeof(int) * nProfDataCnt);
-		char *dataBuffers = new char[nReceiveDataOnceSize];
-		memcpy_s(dataBuffers, nReceiveDataOnceSize, pnProfileData, nReceiveDataOnceSize);
-		fwrite(dataBuffers, sizeof(char), nReceiveDataOnceSize, fp);
+	}
+	int val = atoi(dataBuffers);
+	BufferInt = &val;
+	AIOperationDatas::DataProcessing(BufferInt);
+	if (dataBuffers != NULL) 
+	{
 		delete[] dataBuffers;
 		dataBuffers = NULL;
-		*/
 	}
-	/*fclose(fp);*/
-	// CDataExport::ExportProfileThreadEx(&(vecProfileData.at(0)), m_fSaveFilePath, m_xvMainDataCnt);
-	CThreadSafeBuffer* threadSafeBuf = CThreadSafeBuffer::getInstance();
-	threadSafeBuf->Add(dwUser, vecProfileData, dwNotify);
+	if (BufferInt != NULL)
+	{
+		delete[] BufferInt;
+		BufferInt = NULL;
+	}
 }
+
+//void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
+//{
+//	vector<PROFILE_DATA> vecProfileData;
+//	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD);
+//	int nReceiveDataOnceSize = (sizeof(int) * nProfDataCnt);
+//	// int *dataBuffers = new int[TotalSize];
+//	int *dataNumbers[ROWNUMS];
+//	for (DWORD i = 0; i < dwCount; i++)
+//	{
+//		BYTE *pbyBlock = pBuffer + dwSize * i;
+//		LJV7IF_PROFILE_HEADER* pHeader = (LJV7IF_PROFILE_HEADER*)pbyBlock;
+//		int* pnProfileData = (int*)(pbyBlock + sizeof(LJV7IF_PROFILE_HEADER));
+//		LJV7IF_PROFILE_FOOTER* pFooter = (LJV7IF_PROFILE_FOOTER*)(pbyBlock + dwSize - sizeof(LJV7IF_PROFILE_FOOTER));
+//		vecProfileData.push_back(PROFILE_DATA(m_aProfileInfo[dwUser], pHeader, pnProfileData, pFooter));
+//		dataNumbers[i] = pnProfileData;
+//	}
+//	//dataBuffers = dataNumbers;
+//	//memcpy_s(dataBuffers, TotalSize + 1200, dataNumbers, TotalSize);
+//	cout << dataNumbers << endl;
+//	//int *dataBuffers = dataNumbers;
+//	//AIOperationDatas::DataProcessing(dataBuffers);
+//	// delete[] dataBuffers;
+//	// dataBuffers = NULL;
+//	//CThreadSafeBuffer* threadSafeBuf = CThreadSafeBuffer::getInstance();
+//	//threadSafeBuf->Add(dwUser, vecProfileData, dwNotify);
+//}
 
 /////  打开高速USB设备，并设置标记位置。
 int CaptureLaser::initHighSpeedDataUsbCommunicationInitalizeSystems()
