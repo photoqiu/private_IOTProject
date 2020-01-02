@@ -224,6 +224,19 @@ BOOL CDataExport::ExportDoProfileEx(const string profileData, CString strFileNam
 	return TRUE;
 }
 
+BOOL CDataExport::ExportDoProfileEx(const char *datas, CString strFileName, int nProfileCnt)
+{
+	FILE *fp;
+	if ((fp = fopen((LPSTR)(LPCSTR)strFileName, "a+")) == NULL)
+	{
+		AfxMessageBox(_T("Output file cannot open."), MB_ICONERROR | MB_OK);
+		return FALSE;
+	}
+	fputs(datas, fp);
+	fclose(fp);
+	return TRUE;
+}
+
 /*
  Export profile data
  @param Profile data
