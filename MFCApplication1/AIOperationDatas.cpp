@@ -12,13 +12,87 @@ const static int TotalSize = 500 * (1200 * sizeof(int));
 const static int ROWNUMS = 500;
 const static int COLUMNS = 1200;
 
+pthread_mutex_t myMutex;
+pthread_cond_t cond;
+vector<string> Buffers(ROWNUMS);
+int length = 0;
+
+void *producer(void *arg) {
+	pthread_mutex_lock(&myMutex);
+	string *StrPoint = static_cast<string *>(arg);
+	string FileNames = *StrPoint;
+	Buffers.push_back(FileNames);
+	delete StrPoint;
+	printf("producer length %d\n", Buffers.size());
+	pthread_cond_signal(&cond);
+	pthread_mutex_unlock(&myMutex);
+	return 0;
+}
+
+void *consumer(void *arg) {
+	pthread_mutex_lock(&myMutex);
+	String FileNames = (String)Buffers.at(0);
+	//读取文件。算法执行。删除文件。
+	AIOperationDatas::ReadFileContents(FileNames);
+	AIOperationDatas::DeleteFiles(FileNames);
+	Buffers.erase(Buffers.begin());
+	while (Buffers.empty())
+	{
+		printf(" consumer waiting...\n");
+		pthread_cond_wait(&cond, &myMutex);
+	}
+	pthread_mutex_unlock(&myMutex);
+	return 0;
+}
 
 AIOperationDatas::AIOperationDatas(void)
 {
+	
 }
 
 AIOperationDatas::~AIOperationDatas(void)
 {
+}
+
+void AIOperationDatas::ReadFileContents(string filename)
+{
+	FILE *fp;
+	char *datas = new char[TotalSize];
+	if ((fp = fopen(filename.c_str(), "r")) == NULL) {
+		printf("Cannot open file\n");
+		return;
+	}
+	while (fgets(datas, TotalSize, fp)) {
+		printf("%s", datas);
+	}
+	AIOperationDatas::ExchangeDatas((int *)datas);
+	fclose(fp);
+	if (datas != NULL) 
+	{
+		delete[] datas;
+		datas = NULL;
+	}
+}
+
+void AIOperationDatas::DeleteFiles(string filename)
+{
+	if (remove(filename.c_str()) == 0) 
+	{
+		return;
+	}
+}
+
+void AIOperationDatas::FileDataProcessing(const char *filename)
+{
+	pthread_t pThread, cThread;
+	pthread_mutex_init(&myMutex, 0);
+	pthread_cond_init(&cond, 0);
+	pthread_create(&pThread, 0, producer, (void*)filename);
+	pthread_create(&cThread, 0, consumer, (void*)filename);
+	pthread_join(pThread, NULL);
+	pthread_join(cThread, NULL);
+	pthread_mutex_destroy(&myMutex);
+	pthread_cond_destroy(&cond);
 }
 
 void AIOperationDatas::DataProcessing(int *buffers)

@@ -157,41 +157,59 @@ char* CaptureLaser::my_strncpy(char *dest, char *source)
 void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
 {
 	vector<PROFILE_DATA> vecProfileData;
-	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD) + 1;
-	int nReceiveDataOnceSize = (sizeof(int) * nProfDataCnt);
-	char *dataBuffers = new char[TotalSize];
-	int *BufferInt = new int[TotalSize];
+	CString m_xvSaveFilePath = CDataExport::MakeProfileName(0);
+	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD);
 	for (DWORD i = 0; i < dwCount; i++)
 	{
-		char *TempBuffers = new char[nProfDataCnt];
-		nReceiveDataOnceSize = nReceiveDataOnceSize * (i + 1);
 		BYTE *pbyBlock = pBuffer + dwSize * i;
-		LJV7IF_PROFILE_HEADER* pHeader = (LJV7IF_PROFILE_HEADER*)pbyBlock;
-		int* pnProfileData = (int*)(pbyBlock + sizeof(LJV7IF_PROFILE_HEADER));
-		LJV7IF_PROFILE_FOOTER* pFooter = (LJV7IF_PROFILE_FOOTER*)(pbyBlock + dwSize - sizeof(LJV7IF_PROFILE_FOOTER));
+		LJV7IF_PROFILE_HEADER *pHeader = (LJV7IF_PROFILE_HEADER*)pbyBlock;
+		int *pnProfileData = (int*)(pbyBlock + sizeof(LJV7IF_PROFILE_HEADER));
+		LJV7IF_PROFILE_FOOTER *pFooter = (LJV7IF_PROFILE_FOOTER*)(pbyBlock + dwSize - sizeof(LJV7IF_PROFILE_FOOTER));
 		vecProfileData.push_back(PROFILE_DATA(m_aProfileInfo[dwUser], pHeader, pnProfileData, pFooter));
-		memcpy_s(TempBuffers, nProfDataCnt, pnProfileData, nProfDataCnt);
-		snprintf(dataBuffers, nReceiveDataOnceSize, "%s%s", dataBuffers, TempBuffers);
-		if (TempBuffers != NULL)
-		{
-			delete[] TempBuffers;
-			TempBuffers = NULL;
-		}
+		CDataExport::ExportDoProfileEx((char *)pnProfileData, m_xvSaveFilePath, 0);
 	}
-	int val = atoi(dataBuffers);
-	BufferInt = &val;
-	AIOperationDatas::DataProcessing(BufferInt);
-	if (dataBuffers != NULL) 
-	{
-		delete[] dataBuffers;
-		dataBuffers = NULL;
-	}
-	if (BufferInt != NULL)
-	{
-		delete[] BufferInt;
-		BufferInt = NULL;
-	}
+	///这里有个队列控制。
+	AIOperationDatas::FileDataProcessing((LPCTSTR) m_xvSaveFilePath);
 }
+
+//void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
+//{
+//	vector<PROFILE_DATA> vecProfileData;
+//	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD) + 1;
+//	int nReceiveDataOnceSize = (sizeof(int) * nProfDataCnt);
+//	char *dataBuffers = new char[TotalSize];
+//	int *BufferInt = new int[TotalSize];
+//	for (DWORD i = 0; i < dwCount; i++)
+//	{
+//		char *TempBuffers = new char[nProfDataCnt];
+//		nReceiveDataOnceSize = nReceiveDataOnceSize * (i + 1);
+//		BYTE *pbyBlock = pBuffer + dwSize * i;
+//		LJV7IF_PROFILE_HEADER* pHeader = (LJV7IF_PROFILE_HEADER*)pbyBlock;
+//		int* pnProfileData = (int*)(pbyBlock + sizeof(LJV7IF_PROFILE_HEADER));
+//		LJV7IF_PROFILE_FOOTER* pFooter = (LJV7IF_PROFILE_FOOTER*)(pbyBlock + dwSize - sizeof(LJV7IF_PROFILE_FOOTER));
+//		vecProfileData.push_back(PROFILE_DATA(m_aProfileInfo[dwUser], pHeader, pnProfileData, pFooter));
+//		memcpy_s(TempBuffers, nProfDataCnt, pnProfileData, nProfDataCnt);
+//		snprintf(dataBuffers, nReceiveDataOnceSize, "%s%s", dataBuffers, TempBuffers);
+//		if (TempBuffers != NULL)
+//		{
+//			delete[] TempBuffers;
+//			TempBuffers = NULL;
+//		}
+//	}
+//	int val = atoi(dataBuffers);
+//	BufferInt = &val;
+//	AIOperationDatas::DataProcessing(BufferInt);
+//	if (dataBuffers != NULL) 
+//	{
+//		delete[] dataBuffers;
+//		dataBuffers = NULL;
+//	}
+//	if (BufferInt != NULL)
+//	{
+//		delete[] BufferInt;
+//		BufferInt = NULL;
+//	}
+//}
 
 //void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
 //{

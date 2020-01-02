@@ -1,5 +1,6 @@
 #include <direct.h>
 #include <io.h>
+#include <vector>
 #include <iostream>
 #include <pthread.h>
 #include <opencv2/opencv.hpp>
@@ -14,7 +15,10 @@ class AIOperationDatas
 public:
 	AIOperationDatas(void);
 	~AIOperationDatas(void);
+	static void FileDataProcessing(const char *filename);
 	static void DataProcessing(int *buffers);
+	static void ReadFileContents(string filename);
+	static void DeleteFiles(string filename);
 private:
 	static void AnalyticalDatas(HGOutputAB output_datas);
 	static void ExchangeDatas(int *buffers);
