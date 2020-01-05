@@ -124,27 +124,12 @@ CString CDataExport::MakeProfileName(int orders)
 	dwBytesWrite = 0;
 	tmpBuf = "  ";
 	GetLocalTime(&sys);
-	filename.Format(_T("E:\\logs\\%4d\\"), sys.wYear);
+	filename.Format(_T("E:\\logs\\7A-8B\\"));
 	if (!dirExists(filename.GetBuffer(0)))
 	{
 		bool flag = CreateDirectory(filename, NULL);
 	}
-	filename.Format(_T("E:\\logs\\%4d\\%02d\\"), sys.wYear, sys.wMonth);
-	if (!dirExists(filename.GetBuffer(0)))
-	{
-		bool flag = CreateDirectory(filename, NULL);
-	}
-	filename.Format(_T("E:\\logs\\%4d\\%02d\\%02d\\"), sys.wYear, sys.wMonth, sys.wDay);
-	if (!dirExists(filename.GetBuffer(0)))
-	{
-		bool flag = CreateDirectory(filename, NULL);
-	}
-	filename.Format(_T("E:\\logs\\%4d\\%02d\\%02d\\7A-8B\\"), sys.wYear, sys.wMonth, sys.wDay);
-	if (!dirExists(filename.GetBuffer(0)))
-	{
-		bool flag = CreateDirectory(filename, NULL);
-	}
-	filename.Format(_T("E:\\logs\\%4d\\%02d\\%02d\\7A-8B\\%4d_%02d_%02d_%02d_%02d_Seconds_%02d_Milliseconds_%03d_week%1d_Laser_%d.log"), sys.wYear, sys.wMonth, sys.wDay, sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds, sys.wDayOfWeek, orders);
+	filename.Format(_T("E:\\logs\\7A-8B\\%4d_%02d_%02d_%02d_%02d_%02d_%03d_Laser_%d.log"), sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds, orders);
 	return filename;
 }
 
@@ -224,7 +209,7 @@ BOOL CDataExport::ExportDoProfileEx(const string profileData, CString strFileNam
 	return TRUE;
 }
 
-BOOL CDataExport::ExportDoProfileEx(const char *datas, CString strFileName, int nProfileCnt)
+BOOL CDataExport::ExportDoSaveProfileEx(char *datas, CString strFileName, int nProfileCnt)
 {
 	FILE *fp;
 	if ((fp = fopen((LPSTR)(LPCSTR)strFileName, "a+")) == NULL)
@@ -232,6 +217,7 @@ BOOL CDataExport::ExportDoProfileEx(const char *datas, CString strFileName, int 
 		AfxMessageBox(_T("Output file cannot open."), MB_ICONERROR | MB_OK);
 		return FALSE;
 	}
+	cout << datas << endl;
 	fputs(datas, fp);
 	fclose(fp);
 	return TRUE;

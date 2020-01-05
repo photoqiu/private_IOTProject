@@ -54,6 +54,7 @@ public:
 	int ReConnectionCommonSystems();
 	int PauseCommonSystems();
 	int StopCommonSystems();
+	static void DoProcessDatas();
 	/* 自定义系统过程---结束 */
 private:
 	int fileCnt = 0;
@@ -109,6 +110,7 @@ private:
 	static void CountProfileReceive(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser);
 	static void ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser);
 	static char* my_strncpy(char *dest, char *source);
+	
 	void Settime();
 	int initCommonSystems();
 	LJV7IF_PROFILE_INFO getProFileInfoConfig();

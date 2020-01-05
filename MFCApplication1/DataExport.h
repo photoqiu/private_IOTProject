@@ -26,7 +26,7 @@ public:
 	static BOOL ExportDoProfileEx(const string profileData, CString strFileName, int nProfileCnt);
 	static BOOL ExportProfile(const PROFILE_DATA *profileData, CString strFileName, int nProfileCnt);
 	static BOOL ExportDoProfileEx(const PROFILE_DATA *profileData, CString strFileName, int nProfileCnt);
-	static BOOL ExportDoProfileEx(const char *datas, CString strFileName, int nProfileCnt);
+	static BOOL ExportDoSaveProfileEx(char *datas, CString strFileName, int nProfileCnt);
 	static CString MakeProfileName(int orders);
 	static CString MakeCVSProfileName(int orders);
 	static void saveToTxt(const PROFILE_DATA *m_vecProfileData, CString strFileName, int nProfileCnt);

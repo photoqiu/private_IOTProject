@@ -11,7 +11,8 @@ static float RunningSpeed = 1.2;  //钢管运行速度
 const static int TotalSize = 500 * (1200 * sizeof(int));
 const static int ROWNUMS = 500;
 const static int COLUMNS = 1200;
-
+const static int READNUMBERS = sizeof(char);
+/*
 pthread_mutex_t myMutex;
 pthread_cond_t cond;
 vector<string> Buffers(ROWNUMS);
@@ -43,7 +44,7 @@ void *consumer(void *arg) {
 	}
 	pthread_mutex_unlock(&myMutex);
 	return 0;
-}
+}*/
 
 AIOperationDatas::AIOperationDatas(void)
 {
@@ -62,9 +63,10 @@ void AIOperationDatas::ReadFileContents(string filename)
 		printf("Cannot open file\n");
 		return;
 	}
-	while (fgets(datas, TotalSize, fp)) {
-		printf("%s", datas);
-	}
+	fseek(fp, 0, SEEK_END);
+	long fileSize = ftell(fp);
+	fseek(fp, 0, SEEK_SET);
+	int numread = fread(datas, READNUMBERS, fileSize, fp);
 	AIOperationDatas::ExchangeDatas((int *)datas);
 	fclose(fp);
 	if (datas != NULL) 
@@ -82,22 +84,10 @@ void AIOperationDatas::DeleteFiles(string filename)
 	}
 }
 
-void AIOperationDatas::FileDataProcessing(const char *filename)
-{
-	pthread_t pThread, cThread;
-	pthread_mutex_init(&myMutex, 0);
-	pthread_cond_init(&cond, 0);
-	pthread_create(&pThread, 0, producer, (void*)filename);
-	pthread_create(&cThread, 0, consumer, (void*)filename);
-	pthread_join(pThread, NULL);
-	pthread_join(cThread, NULL);
-	pthread_mutex_destroy(&myMutex);
-	pthread_cond_destroy(&cond);
-}
-
 void AIOperationDatas::DataProcessing(int *buffers)
 {
 	Book PipeDatas;
+	buffers[600000] = buffers[1];
 	PipeDatas.diameter = WallThickness;
 	PipeDatas.thickness = PipeDiameter;
 	PipeDatas.length = TubeLength;
@@ -131,7 +121,8 @@ void AIOperationDatas::ExchangeDatas(int *buffers)
 
 string AIOperationDatas::MakeFileNames(string camera_types)
 {
-	string folderPath = "E:\\cameras_pic_datas";
+	//string folderPath = "E:\\cameras_pic_datas";
+	string folderPath = "D:\\cameras_pic_datas";
 	SYSTEMTIME sys;
 	GetLocalTime(&sys);
 	if (0 != _access(folderPath.c_str(), 2))
@@ -172,34 +163,36 @@ void AIOperationDatas::AnalyticalDatas(HGOutputAB output_datas)
 	string strFileNameB = AIOperationDatas::MakeFileNames("B");
 	if (!aimg.empty())
 	{
-		imshow("测头A发现缺陷", aimg);
+		//imshow("测头A发现缺陷", aimg);
 		imwrite(strFileNameA, aimg);
 		waitKey(0);
+		///上传之后删掉图片
 	}
 	if (!bimg.empty())
 	{
-		imshow("测头B发现缺陷", bimg);
+		//imshow("测头B发现缺陷", bimg);
 		imwrite(strFileNameB, bimg);
 		waitKey(0);
+		///上传之后删掉图片
 	}
 	if (output_data_a.nResType == 2) 
 	{
-		AfxMessageBox(_T("测头A发现缺陷"), MB_ICONERROR | MB_OK);
+		//AfxMessageBox(_T("测头A发现缺陷"), MB_ICONERROR | MB_OK);
 		//这里要写入数据库
 		//这里要提交图片到服务器。
 	}
 	else if (output_data_a.nResType == -3) 
 	{
-		AfxMessageBox(_T("测头A数据有误"), MB_ICONERROR | MB_OK);
+		//AfxMessageBox(_T("测头A数据有误"), MB_ICONERROR | MB_OK);
 	}
 	if (output_data_b.nResType == 2) 
 	{
-		AfxMessageBox(_T("测头B发现缺陷"), MB_ICONERROR | MB_OK);
+		//AfxMessageBox(_T("测头B发现缺陷"), MB_ICONERROR | MB_OK);
 		//这里要写入数据库
 		//这里要提交图片到服务器。
 	}
 	else if (output_data_b.nResType == -3)
 	{
-		AfxMessageBox(_T("测头B数据有误"), MB_ICONERROR | MB_OK);
+		//AfxMessageBox(_T("测头B数据有误"), MB_ICONERROR | MB_OK);
 	}
 }

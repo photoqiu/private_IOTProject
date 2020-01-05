@@ -5,6 +5,9 @@ LJV7IF_PROFILE_INFO CaptureLaser::m_profileInfo;
 LJV7IF_PROFILE_INFO CaptureLaser::m_aProfileInfo[LJV7IF_DEVICE_COUNT];
 vector<PROFILE_DATA> g_vecProfileData;
 
+pthread_mutex_t myMutex;
+vector<CString> Buffers;
+int length = 0;
 
 CaptureLaser::CaptureLaser()
 {
@@ -154,10 +157,66 @@ char* CaptureLaser::my_strncpy(char *dest, char *source)
 	return 0;
 }
 
+void *ConsumerDatas(void *arg) {
+	pthread_mutex_lock(&myMutex);
+	while (true) 
+	{
+		vector<CString>().swap(Buffers);
+		HANDLE hFind;
+		WIN32_FIND_DATA FindDatas;
+		LARGE_INTEGER sizes;
+		//const char *dir = "E:\\logs\\7A-8B\\";
+		const char *dir = "D:\\logs\\7A-8B_org\\";
+		char dirNews[100];
+		strcpy(dirNews, dir);
+		strcat(dirNews, "\\*.*");
+		hFind = FindFirstFile(dirNews, &FindDatas);
+		do
+		{
+			//char files[500] = "E:\\logs\\7A-8B\\";
+			char files[500] = "D:\\logs\\7A-8B_org\\";
+			CString filePaths;
+			sizes.LowPart = FindDatas.nFileSizeLow;
+			sizes.HighPart = FindDatas.nFileSizeHigh;
+			strcat(files, FindDatas.cFileName);
+			if (strcmp(FindDatas.cFileName, ".") != 0
+				&& strcmp(FindDatas.cFileName, "..") != 0)
+			{
+				filePaths.Format("%s", files);
+				Buffers.push_back(filePaths);
+			}
+		} while (FindNextFile(hFind, &FindDatas));
+		FindClose(hFind);
+		int LoopSize = Buffers.size();
+		for (int i = 0; i < LoopSize; i++)
+		{
+		
+			//pthread_cond_wait内部会解锁，然后等待条件变量被其它线程激活
+			String FileNames = Buffers.at(0).GetBuffer(0);
+			//读取文件。算法执行。删除文件。
+			Sleep(2);
+			AIOperationDatas::ReadFileContents(FileNames);
+			Sleep(40);
+			//AIOperationDatas::DeleteFiles(FileNames);
+			Buffers.erase(Buffers.begin());
+			Sleep(2);
+		}
+		Sleep(100);
+	}
+	pthread_mutex_unlock(&myMutex);
+	pthread_exit(NULL);
+	return 0;
+}
+
 void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
 {
+	FILE *fp;
 	vector<PROFILE_DATA> vecProfileData;
 	CString m_xvSaveFilePath = CDataExport::MakeProfileName(0);
+	if ((fp = fopen((LPCSTR)m_xvSaveFilePath, "a+")) == NULL)
+	{
+		AfxMessageBox(_T("Output file cannot open."), MB_ICONERROR | MB_OK);
+	}
 	int nProfDataCnt = (dwSize - sizeof(LJV7IF_PROFILE_HEADER) - sizeof(LJV7IF_PROFILE_FOOTER)) / sizeof(DWORD);
 	for (DWORD i = 0; i < dwCount; i++)
 	{
@@ -165,11 +224,37 @@ void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD d
 		LJV7IF_PROFILE_HEADER *pHeader = (LJV7IF_PROFILE_HEADER*)pbyBlock;
 		int *pnProfileData = (int*)(pbyBlock + sizeof(LJV7IF_PROFILE_HEADER));
 		LJV7IF_PROFILE_FOOTER *pFooter = (LJV7IF_PROFILE_FOOTER*)(pbyBlock + dwSize - sizeof(LJV7IF_PROFILE_FOOTER));
+		//fwrite((char *)pnProfileData, sizeof(char), nProfDataCnt * sizeof(int), fp);
+		fwrite((char *)pnProfileData, sizeof(char), nProfDataCnt * sizeof(int), fp);
 		vecProfileData.push_back(PROFILE_DATA(m_aProfileInfo[dwUser], pHeader, pnProfileData, pFooter));
-		CDataExport::ExportDoProfileEx((char *)pnProfileData, m_xvSaveFilePath, 0);
 	}
-	///这里有个队列控制。
-	AIOperationDatas::FileDataProcessing((LPCTSTR) m_xvSaveFilePath);
+	fclose(fp);
+}
+
+//pthread datas
+void CaptureLaser::DoProcessDatas()
+{
+	int ret;
+	pthread_t cThread;
+	pthread_mutexattr_t myMutexAttr;
+	pthread_mutexattr_init(&myMutexAttr);
+	pthread_mutexattr_setpshared(&myMutexAttr, PTHREAD_PROCESS_SHARED);
+	pthread_mutex_init(&myMutex, NULL);
+	ret = pthread_create(&cThread, NULL, ConsumerDatas, NULL);
+	if (ret != 0)
+	{
+		AfxMessageBox(_T("消费线程建立，失败。"), MB_ICONERROR | MB_OK);
+		exit(EXIT_FAILURE);
+	}
+	ret = pthread_detach(cThread);
+	//ret = pthread_join(cThread, NULL);
+	if (ret != 0)
+	{
+		AfxMessageBox(_T("消费线程销毁，失败。"), MB_ICONERROR | MB_OK);
+		exit(EXIT_FAILURE);
+	}
+	pthread_mutexattr_destroy(&myMutexAttr);
+	pthread_mutex_destroy(&myMutex);
 }
 
 //void CaptureLaser::ReceiveHighSpeedOnceData(BYTE* pBuffer, DWORD dwSize, DWORD dwCount, DWORD dwNotify, DWORD dwUser)
@@ -770,10 +855,12 @@ int CaptureLaser::DoLaserInitUsbHighSpeedDatas()
 int CaptureLaser::StartCommonSystems()
 {
 	ClearMemory();
-	DoLaserInitUsbHighSpeedDatas();	
+	closeSystems();
+	DoLaserInitUsbHighSpeedDatas();
 	initHighSpeedDataUsbCommunicationInitalizeSystems();
 	initPrestarthighspeeddatacommunication();
 	StartHighSpeedDataCommunication();
+	CaptureLaser::DoProcessDatas();
 	return 0;
 }
 

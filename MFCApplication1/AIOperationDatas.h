@@ -15,7 +15,6 @@ class AIOperationDatas
 public:
 	AIOperationDatas(void);
 	~AIOperationDatas(void);
-	static void FileDataProcessing(const char *filename);
 	static void DataProcessing(int *buffers);
 	static void ReadFileContents(string filename);
 	static void DeleteFiles(string filename);
